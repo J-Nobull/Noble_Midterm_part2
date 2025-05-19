@@ -1,0 +1,25 @@
+{
+  "name": "student-ethnicity-predictor",
+  "description": "Predict student race/ethnicity from math, reading, and writing scores using Logistic Regression.",
+  "repository": "https://github.com/your-username/your-repo-name",
+  "keywords": ["flask", "machine learning", "heroku", "ci/cd", "github actions"],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "FLASK_ENV": "production"
+  },
+  "scripts": {
+    "postdeploy": "python noble_mid.py"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "stack": "heroku-22"
+}
