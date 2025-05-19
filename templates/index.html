@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Race/Ethnicity Predictor</title>
+</head>
+<body>
+    <h2>Enter Student Scores</h2>
+    <form action="/predict" method="post">
+        Math: <input type="number" name="math"><br>
+        Reading: <input type="number" name="reading"><br>
+        Writing: <input type="number" name="writing"><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction }}</h3>
+</body>
+</html>
